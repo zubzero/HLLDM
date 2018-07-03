@@ -18,6 +18,14 @@
   src: url(fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
 }
 .tabs-content.carousel .carousel-item { height:auto; }
+footer{
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -34,7 +42,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .sidenav .user-view {
-    padding: 40px 32px 0;
+    padding: 40px 32px 40px;
 }
 .btn-floating{
 	position: fixed;
@@ -84,6 +92,6 @@ nav .brand-logo{
   border: 1px solid #ccc;
 }
 .nav-letra{
-  font-size: 18px;
+  font-size: 16px;
   border-bottom: 1px solid #ccc;
 }

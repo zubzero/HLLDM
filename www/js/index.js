@@ -35,7 +35,10 @@ function exitFromApp(){
     }
 };
 function onBackKeyDown(){
-    // alert('Atrás');
-    return false;
+    if( confirm("¿Realmente desea salir de la aplicación?") )
+    {
+        navigator.app.exitApp();
+    }
+    // return false;
 };
 app.initialize();
