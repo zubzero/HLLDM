@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/index2.css">
+        <title>Himnario LLDM</title>
+    </head>
+  <body>
+    <nav>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Himnario</a>
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="img/templo.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="img/icono.png"></a>
+          </div></li>
+          <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i></a></li>
+          <li><a class="waves-effect" href="himnos.html">Himnos</a></li>
+          <li><a class="waves-effect" href="epistolas.html">Epístolas</a></li>
+          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
+          <li><a class="waves-effect" href="adicionales.html">Adicionales</a></li>
+          <li><a class="waves-effect" href="temas_estudio.html">Temas de estudio</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="ajustes.html">Ajustes</a></li>
+          <li><a class="waves-effect" href="" onclick="exitFromApp();">Salir</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="container">
+      <h3>Ajustes</h3>
+        <form action="/action_page.php">
+          <hr>
+          Escoge el tamaño de letra <br>
+          <div id="letra">
+            <p>
+              <label>
+                <input name="tamano" id="chica" value="0.8rem" type="radio" checked />
+                <span style="font-size: 0.8rem;">Chica</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="tamano" id="normal" value="1rem" type="radio" checked />
+                <span>Normal</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="tamano" id="mediana" value="1.2rem" type="radio" />
+                <span style="font-size: 1.2rem;">Mediana</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input id="grande" name="tamano" value="1.5rem" type="radio"  />
+                <span style="font-size: 1.5rem;">Grande</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="tamano" id="extra" value="1.7rem" type="radio" />
+                <span style="font-size: 1.7rem;">Extra grande</span>
+              </label>
+            </p>
+          </div>
+          <hr>
+          Escoge si quieres que tengan fondos.
+          <div id="fondos">
+            <p>
+              <label>
+                <input name="fondo" id="claro" value="claro" type="radio" checked />
+                <span>Claros</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="fondo" id="oscuro" value="oscuro" type="radio" />
+                <span>Oscuros</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input id="sin_fondo" name="fondo" value="nada" type="radio"  />
+                <span>Sin fondo</span>
+              </label>
+            </p>
+          </div>
+          <hr>
+          <button onclick="store()" class="waves-effect waves-light btn light-blue darken-3" type="button">Guardar ajustes</button>
+        </form>
+        <p>&nbsp;</p>
+      </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      function store(){
+        var fondos = document.getElementById("fondos").value;
+        if (document.getElementById('claro').checked) {
+          fondos = document.getElementById('claro').value;
+        }
+        if (document.getElementById('oscuro').checked) {
+          fondos = document.getElementById('oscuro').value;
+        }
+        if (document.getElementById('sin_fondo').checked) {
+          fondos = document.getElementById('sin_fondo').value;
+        }
+        var letra = document.getElementById("letra").value;
+        if (document.getElementById('chica').checked) {
+          letra = document.getElementById('chica').value;
+        }
+        if (document.getElementById('normal').checked) {
+          letra = document.getElementById('normal').value;
+        }
+        if (document.getElementById('mediana').checked) {
+          letra = document.getElementById('mediana').value;
+        }
+        if (document.getElementById('grande').checked) {
+          letra = document.getElementById('grande').value;
+        }
+        if (document.getElementById('extra').checked) {
+          letra = document.getElementById('extra').value;
+        }
+        // var inputEmail= document.getElementById("email");
+        localStorage.setItem("fondos", fondos);
+        localStorage.setItem("tamano", letra);
+        // localStorage.setItem("email", inputEmail.value);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/drawer.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="js/ready.js"></script>
+        <title>Himnario LLDM</title>
+    </head>
+    <body class="mdc-typography demo-body home">
+        <div style="display: none;" class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <div class="sidebar-overlay"></div>
+
+<div class="mdc-toolbar mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="#" class="demo-menu material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__title catalog-title">Himnario LLDM</span>
+        </section>
+      </div>
+    </div>
+    <aside class="mdc-drawer mdc-drawer--temporary demo-drawer" style="--mdc-temporary-drawer-opacity:0;">
+      <nav class="mdc-drawer__drawer">
+        <header class="mdc-drawer__header">
+          <div class="mdc-drawer__header-content mdc-theme--text-primary-on-primary mdc-theme--primary-bg">
+            Header here
+          </div>
+        </header>
+        <nav class="mdc-drawer__content mdc-list-group">
+          <div id="icon-with-text-demo" class="mdc-list">
+            <a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>Star
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>Sent Mail
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>Drafts
+            </a>
+          </div>
+
+          <hr class="mdc-list-divider">
+
+          <div class="mdc-list">
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>All Mail
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>Trash
+            </a>
+            <a class="mdc-list-item demo-drawer-list-item" href="#" data-mdc-tabindex-handled="true" tabindex="-1">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>Spam
+            </a>
+          </div>
+        </nav>
+      </nav>
+    </aside>
+    <main class="demo-main mdc-toolbar-fixed-adjust">
+      <h1 class="mdc-typography--display1">Temporary Drawer</h1>
+      <p class="mdc-typography--body1">Click the menu icon above to open.</p>
+      <div id="demo-radio-buttons" class="theme-radio-buttons">
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input class="mdc-radio__native-control" type="radio" id="theme-radio-default" name="theme" checked="">
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="theme-radio-default">Default</label>
+        </div>
+        <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+            <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab col s3"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
+        <div id="test1" class="col s12">Test 1</div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+        <div id="test4" class="col s12">Test 4</div>
+      </div>
+      </div>
+    </main>
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+        <script type="text/javascript" src="js/material-components-web.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

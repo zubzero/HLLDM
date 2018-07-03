@@ -1,0 +1,38 @@
+.sidenav .user-view {
+    padding: 40px 32px 0;
+}
+.btn-floating{
+	position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.cnt{
+	text-align: center;
+}
+.just{text-align: justify;}
+.right{text-align: right;}
+.thimno{
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 10px;
+}
+.cnt .azul, .cnt .nblu{color: #003973; font-weight: bold;}
+.nblu{font-size: 16px;}
+.isbn{
+	text-align: right;
+	color: #ccc;
+    font-size: x-small;
+}
+nav .brand-logo{
+	font-size: 1.7rem;
+}
+.collection.with-header .collection-header {
+    background-color: #f3f3f3;
+ }
+.home{
+	background: url('../img/back_home.jpg') no-repeat center top;
+	background-size: cover;
+}
+.dropdown-content{
+	width: 250px !important;
+}
