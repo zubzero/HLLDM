@@ -42,7 +42,7 @@ footer{
   -webkit-font-smoothing: antialiased;
 }
 .sidenav .user-view {
-    padding: 40px 32px 40px;
+    padding: 25px 32px 25px;
 }
 .btn-floating{
 	position: fixed;
@@ -94,4 +94,47 @@ nav .brand-logo{
 .nav-letra{
   font-size: 16px;
   border-bottom: 1px solid #ccc;
+}
+#myInput {
+  background-image: url('../img/search_icon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 85%;
+  font-size: 16px;
+  padding:  0 0 0 45px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.himno{
+    background: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sidenav .user-view .circle{margin:0 auto;}
+.sidenav{
+  background: url('../img/fondo_nav.jpg') no-repeat top right #fff;
+  background-size: cover;
 }

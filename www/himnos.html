@@ -35,6 +35,7 @@
     <div class="container">
       <!-- Dropdown Trigger -->
       <a class='dropdown-trigger btn btn-large' style="display: none" href='#' data-target='dropdown1'><i class="material-icons">dialpad</i></a>
+      <input type="text" id="myInput" placeholder="Buscar por palabra, nombre o número" title="Buscar himno">
       <!-- Dropdown Structure -->
       <div id='dropdown1' class='dropdown-content'>
         <div class="row">
@@ -99,7 +100,7 @@
           <div class="nav-letra"><a href="#himnoy">Y</a></div>
       </div>
       <h5>NUEVO  INDICE. (# ant.)</h5>
-      <ul class="collection with-header">
+      <ul id="himnos_lista" class="collection with-header">
         <li class="collection-header"><div id="himnoa"><h4>A</h4></div></li>
         <li class="collection-item"><a href="1.html">1. A Cristo Quiero Servirle. (2)</a></li>
         <li class="collection-item"><a href="2.html">2. Acerquese Mi Clamor. (3)</a></li>
@@ -170,7 +171,7 @@
         <li class="collection-item"><a href="66.html">66. Bienaventurado Sera. (64)</a></li>
         <li class="collection-item"><a href="67.html">67. Bienaventurado Todo. (65)</a></li>
         <li class="collection-item"><a href="68.html">68. Brille o No El Sol. (67)</a></li>
-      <li class="collection-header"><div id="himnoc"><h4>C</h4></div></li>
+        <li class="collection-header"><div id="himnoc"><h4>C</h4></div></li>
         <li class="collection-item"><a href="69.html">69. Cada Mañana Abro. (Ad.)</a></li>
         <li class="collection-item"><a href="70.html">70. Cada Paso Que Das. (68)</a></li>
         <li class="collection-item"><a href="71.html">71. Caminando. (69)</a></li>
@@ -760,5 +761,15 @@
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script>
+      (function($) { 
+          $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#himnos_lista li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    })(jQuery);
+    </script>
   </body>
 </html>
