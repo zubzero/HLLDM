@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <title>Himnario LLDM</title>
+  </head>
+    <body>
+    <nav>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view"><a href="#user"><img class="circle" src="img/icono.png"></a>
+          </div></li>
+          <li><a class="waves-effect" href="index.html">Inicio</a></li>
+          <li><a class="waves-effect" href="himnos.html">Himnos</a></li>
+          <li><a class="waves-effect" href="adicionales.html">Adicionales</a></li>
+          <li><a class="waves-effect" href="epistolas_aaron.html">Epístolas de Aarón J.</a></li>
+          <li><a class="waves-effect" href="epistolas_samuel.html">Epístolas de Samuel J.</a></li>
+          <li><a class="waves-effect" href="epistolas_naason.html">Epístolas de Naasón J.</a></li>
+          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
+          <li><a class="waves-effect" href="temas_estudio.html">Estudios B&iacute;blicos</a></li>
+          <li><a class="waves-effect" href="favoritos.html">Favoritos</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="ajustes.html">Ajustes</a></li>
+          <li><a class="waves-effect" id="boton_apoyame" href="apoya.html">Apoya la app</a></li>
+          <li><a class="waves-effect" href="" onclick="exitFromApp();">Salir</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="img/menu_icon.png" alt=""></a>
+        </div>
+    </nav>
+    <div class="container lista">
+      <input type="text" id="myInput" placeholder="Buscar por palabra, nombre o número" title="Buscar himno">
+      <h5>Nueva Era</h5>
+      <ul id="himnos_lista" class="collection with-header">
+        <li class="collection-item pro"><a href="ne1.html">01. El Himnario Antiguo. 1</a></li>
+        <li class="collection-item pro"><a href="ne2.html">02. El Himnario Antiguo. 2</a></li>
+        <li class="collection-item pro"><a href="ne3.html">03. El Himnario Moderno. 1</a></li>
+        <li class="collection-item pro"><a href="ne4.html">04. El Himnario Moderno. 2</a></li>
+        <li class="collection-item"><a href="ne5.html">05. Misión y Principios. ILLDM</a></li>
+        <li class="collection-item"><a href="ne6.html">06. Ap. Aarón J. Semblanza</a></li>
+        <li class="collection-item"><a href="ne7.html">07. Ap. Samuel J. Semblanza</a></li>
+        <li class="collection-item"><a href="ne8.html">08. Ap. Naasón J. Semblanza</a></li>
+        <li class="collection-item"><a href="ne9.html">09. Manifestación del 14 Dic. 2014.</a></li>
+    </ul>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+      (function($) { 
+          $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#himnos_lista li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    })(jQuery);
+    </script>
+  </body>
+</html>

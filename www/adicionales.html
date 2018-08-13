@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <title>Himnario LLDM</title>
+  </head>
+    <body>
+    <nav>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul id="slide-out" class="sidenav">
+          <li><div class="user-view"><a href="#user"><img class="circle" src="img/icono.png"></a>
+          </div></li>
+          <li><a class="waves-effect" href="index.html">Inicio</a></li>
+          <li><a class="waves-effect" href="himnos.html">Himnos</a></li>
+          <li><a class="waves-effect" href="adicionales.html">Adicionales</a></li>
+          <li><a class="waves-effect" href="epistolas_aaron.html">Epístolas de Aarón J.</a></li>
+          <li><a class="waves-effect" href="epistolas_samuel.html">Epístolas de Samuel J.</a></li>
+          <li><a class="waves-effect" href="epistolas_naason.html">Epístolas de Naasón J.</a></li>
+          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
+          <li><a class="waves-effect" href="temas_estudio.html">Estudios B&iacute;blicos</a></li>
+          <li><a class="waves-effect" href="favoritos.html">Favoritos</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="ajustes.html">Ajustes</a></li>
+          <li><a class="waves-effect" id="boton_apoyame" href="apoya.html">Apoya la app</a></li>
+          <li><a class="waves-effect" href="" onclick="exitFromApp();">Salir</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="img/menu_icon.png" alt=""></a>
+        </div>
+    </nav>
+    <div class="container lista">
+      <a href="#" id="js_up" class="boton-subir">
+        <img src="img/arrow_top.png" width="40" height="40" alt="">
+      </a>
+      <input type="text" id="myInput" placeholder="Buscar por palabra, nombre o número" title="Buscar himno">
+      <h5>Adicionales</h5>
+      <ul id="himnos_lista" class="collection with-header">
+        <li class="collection-header"><div id="ad1"><h6>Primicias Nueva Era (16)</h6></div></li>
+        <li class="collection-item"><a href="ad1.html">*Bendita Voz De Dios.</a></li>
+        <li class="collection-item"><a href="ad2.html">*Cuan Perfecto. (Tu destino soy Yo).</a></li>
+        <li class="collection-item"><a href="ad3.html">*Cuando Estaba. (La Gloria Sea A Dios).</a></li>
+        <li class="collection-item"><a href="ad4.html">*Cuando Solo. (Enviado Eres De Dios).</a></li>
+        <li class="collection-item"><a href="ad5.html">*En Mi Alma Hay Una Bendición.</a></li>
+        <li class="collection-item"><a href="ad6.html">*Habitaba En Mi.  (El Gran Consolador).</a></li>
+        <li class="collection-item"><a href="ad7.html">*Hosanna.  (Bendito El Que Viene).</a></li>
+        <li class="collection-item"><a href="ad8.html">*Hoy Queremos Can.(Nuestro Consuelo).</a></li>
+        <li class="collection-item"><a href="ad9.html">*La Vida Del.(La Elección De Mi Amado).</a></li>
+        <li class="collection-item"><a href="ad10.html">*Naciones Tribus.  (El Gran Apóstol).</a></li>
+        <li class="collection-item"><a href="ad11.html">*Quiero Cantar. (Hermosa Manifestac..).</a></li>
+        <li class="collection-item"><a href="ad12.html">*Somos Linaje. (El Ángel De La Cons..).</a></li>
+        <li class="collection-item"><a href="ad13.html">*Somos Peregri.. (El Consuelo D Dios).</a></li>
+        <li class="collection-item"><a href="ad14.html">*Somos Test.. (Conocerle Es Un Honor).</a></li>
+        <li class="collection-item"><a href="ad15.html">*Un Estruendo. (Nardo De Justicia Y G.).</a></li>
+        <li class="collection-item"><a href="ad16.html">*Usted Me Cuida. (Un Apóstol Cuida De).</a></li>
+      <li class="collection-header"><div id="ad2"><h6>Adicionales</h6></div></li>
+        <li class="collection-item"><a href="ad17.html">Abriendo Yo Mis (Por su hermosa Elec..)</a></li>
+        <li class="collection-item"><a href="ad18.html">Al Conocerte Te Sentí. (Mi Respirar.)</a></li>
+        <li class="collection-item"><a href="ad19.html">Anoche Tuve Un Sueño. (La Ciudad Sta.)</a></li>
+        <li class="collection-item"><a href="ad20.html">Bendito El Dios Y Pa..(Tiempos de Grac.)</a></li>
+        <li class="collection-item"><a href="ad21.html">Caminando Entre Montes. (La Misión.)</a></li>
+        <li class="collection-item"><a href="ad22.html">Como Te Amo Naasón.</a></li>
+        <li class="collection-item"><a href="ad23.html">Con Un Pie Pue..(El Que Tiene Las Llav..)</a></li>
+        <li class="collection-item"><a href="ad24.html">Cuan Amable Es. (La Oración Del Justo.)</a></li>
+        <li class="collection-item"><a href="ad25.html">Cuan Hermosa Es. (La Gran Jerusalén.)</a></li>
+        <li class="collection-item"><a href="ad26.html">Debemos Decir Que. (Un Angel Bendito.)</a></li>
+        <li class="collection-item"><a href="ad27.html">Del Apóstol De. (Tengo Un Padre En La.)</a></li>
+        <li class="collection-item"><a href="ad28.html">Del Cielo. (El Apóstol De La Consolac...)</a></li>
+        <li class="collection-item"><a href="ad29.html">Despiertate Y Viste De Sol.</a></li>
+        <li class="collection-item"><a href="ad30.html">Dia Feliz Cuando. (El Aliento De Mi Ser.)</a></li>
+        <li class="collection-item"><a href="ad31.html">En Tu Amor.</a></li>
+        <li class="collection-item"><a href="ad32.html">En Tu Furor Jehová.</a></li>
+        <li class="collection-item"><a href="ad33.html">En Tu Presencia.</a></li>
+        <li class="collection-item"><a href="ad34.html">Erase Un Dia Sin. (El Sol Volvio A Salir.)</a></li>
+        <li class="collection-item"><a href="ad35.html">Escogido Fui De Dios.</a></li>
+        <li class="collection-item"><a href="ad36.html">Estamos Invitad.. (Las Bodas Del Cord..)</a></li>
+        <li class="collection-item"><a href="ad37.html">Gracias a Dios que.. (Contigo Estoy tan).</a></li>
+        <li class="collection-item"><a href="ad38.html">Grato Es Contar La Historia.</a></li>
+        <li class="collection-item"><a href="ad39.html">Hace Tiempo Vino Un. (El Hijo De Dios.)</a></li>
+        <li class="collection-item"><a href="ad40.html">Hay Algo Dentro. (Se Llama Fe.)</a></li>
+        <li class="collection-item"><a href="ad41.html">Hay Un Sol Que. (Una Lumbrera Mayor.)</a></li>
+        <li class="collection-item"><a href="ad42.html">Hay Una Llama En. (La Obra Perfecta.)</a></li>
+        <li class="collection-item"><a href="ad43.html">He Venido Mi Señor.</a></li>
+        <li class="collection-item"><a href="ad44.html">Hermoso Fue. (Mi Elegido Es Naasón.)</a></li>
+        <li class="collection-item"><a href="ad45.html">Hoy Es Un Gran. (Eres El Mas Hermoso.)</a></li>
+        <li class="collection-item"><a href="ad46.html">La Iglesia Del Dios Vivo.</a></li>
+        <li class="collection-item"><a href="ad47.html">No Hay Amigo Mas Hermoso.</a></li>
+        <li class="collection-item"><a href="ad48.html">Oyes Acaso Una Voz. (La Fiesta Mas G.)</a></li>
+        <li class="collection-item"><a href="ad49.html">Padre Tú Significas Tanto.</a></li>
+        <li class="collection-item"><a href="ad50.html">Por El Mundo Vagué (Que Gran Amor)</a></li>
+        <li class="collection-item"><a href="ad51.html">Por La Mañana Yo Dirijo.</a></li>
+        <li class="collection-item"><a href="ad52.html">Por La Oración de un.</a></li>
+        <li class="collection-item"><a href="ad53.html">Quiero Contarles Con Amor.</a></li>
+        <li class="collection-item"><a href="ad54.html">Señor En Tu Presencia.</a></li>
+        <li class="collection-item"><a href="ad55.html">Señor Este Dia Tu. (Yo Amo A Tu Apóst.)</a></li>
+        <li class="collection-item"><a href="ad56.html">Señor Hoy Mi Deseo.</a></li>
+        <li class="collection-item"><a href="ad57.html">Si Callare Tus Maravillas.</a></li>
+        <li class="collection-item"><a href="ad58.html">Si Es Tu Vida En Jesús.</a></li>
+        <li class="collection-item"><a href="ad59.html">Sobre Este Pueblo. (Es Mas Hermoso.)</a></li>
+        <li class="collection-item"><a href="ad60.html">Tu Eres Creador.</a></li>
+        <li class="collection-item"><a href="ad61.html">Una Firme Esperanza.</a></li>
+        <li class="collection-item"><a href="ad62.html">Yo Adoro A Un Dios.</a></li>
+        <li class="collection-item"><a href="ad63.html">Yo Les Contaré La. (Amante Salvador.)</a></li>
+        <li class="collection-item"><a href="ad64.html">Yo No Sé Hablar. (En Su Corazón.)</a></li>
+        <li class="collection-item"><a href="ad65.html">Yo Quiero Cantar. (Con Todo Mi Ser.)</a></li>
+    </ul>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+      (function($) { 
+          $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#himnos_lista li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+          $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+        }else{ // si no
+          $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+        }
+      });
+          //creamos una función accediendo a la etiqueta i en su evento click
+      $("#js_up i").on('click', function (e) { 
+        e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+        $("body,html").animate({ // aplicamos la función animate a los tags body y html
+          scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+        },700); //el valor 700 indica que lo ara en 700 mili segundos
+        return false; //rompe el bucle
+      });
+    })(jQuery);
+    </script>
+  </body>
+</html>

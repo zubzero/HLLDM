@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" href="css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="css/index2.css">
-        <title>Himnario LLDM</title>
-    </head>
-  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <title>Himnario LLDM</title>
+  </head>
+    <body>
     <nav>
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Himnario</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
         <ul id="slide-out" class="sidenav">
-          <li><div class="user-view">
-            <div class="background">
-              <img src="img/templo.jpg">
-            </div>
-            <a href="#user"><img class="circle" src="img/icono.png"></a>
+          <li><div class="user-view"><a href="#user"><img class="circle" src="img/icono.png"></a>
           </div></li>
           <li><a class="waves-effect" href="index.html">Inicio</a></li>
           <li><a class="waves-effect" href="himnos.html">Himnos</a></li>
-          <li><a class="waves-effect" href="epistolas.html">Epístolas</a></li>
-          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
           <li><a class="waves-effect" href="adicionales.html">Adicionales</a></li>
-          <li><a class="waves-effect" href="temas_estudio.html">Temas de estudio</a></li>
+          <li><a class="waves-effect" href="epistolas_aaron.html">Epístolas de Aarón J.</a></li>
+          <li><a class="waves-effect" href="epistolas_samuel.html">Epístolas de Samuel J.</a></li>
+          <li><a class="waves-effect" href="epistolas_naason.html">Epístolas de Naasón J.</a></li>
+          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
+          <li><a class="waves-effect" href="temas_estudio.html">Estudios B&iacute;blicos</a></li>
+          <li><a class="waves-effect" href="favoritos.html">Favoritos</a></li>
           <li><div class="divider"></div></li>
           <li><a class="waves-effect" href="ajustes.html">Ajustes</a></li>
+          <li><a class="waves-effect" id="boton_apoyame" href="apoya.html">Apoya la app</a></li>
           <li><a class="waves-effect" href="" onclick="exitFromApp();">Salir</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="img/menu_icon.png" alt=""></a>
         </div>
     </nav>
-    <div class="container">
+    <div class="container lista">
+      <!-- <a class="btn-floating btn waves-effect waves-light blue darken-4 left" id="boton_arriba"><img src="img/arrow.png" alt=""></a> -->
+      <a href="#" id="js_up" class="boton-subir">
+        <img src="img/arrow_top.png" width="40" height="40" alt="">
+      </a>
       <!-- Dropdown Trigger -->
       <a class='dropdown-trigger btn btn-large' style="display: none" href='#' data-target='dropdown1'><i class="material-icons">dialpad</i></a>
       <input type="text" id="myInput" placeholder="Buscar por palabra, nombre o número" title="Buscar himno">
@@ -99,7 +104,6 @@
           <div class="nav-letra"><a href="#himnov">V</a></div>
           <div class="nav-letra"><a href="#himnoy">Y</a></div>
       </div>
-      <h5>NUEVO  INDICE. (# ant.)</h5>
       <ul id="himnos_lista" class="collection with-header">
         <li class="collection-header"><div id="himnoa"><h4>A</h4></div></li>
         <li class="collection-item"><a href="1.html">1. A Cristo Quiero Servirle. (2)</a></li>
@@ -258,7 +262,7 @@
       <li class="collection-item"><a href="151.html">151. Dios Nos Ha Dado. (146)</a></li>
       <li class="collection-item"><a href="152.html">152. Dios Os Guarde. (147)</a></li>
       <li class="collection-item"><a href="153.html">153. Dios Tenga Misericordia. (148)</a></li>
-      <li class="collection-item"><a href="154.html">154. Divino Compañro. (149)</a></li>
+      <li class="collection-item"><a href="154.html">154. Divino Compañero. (149)</a></li>
       <li class="collection-item"><a href="155.html">155. Divino Jesús. (Ad.)</a></li>
       <li class="collection-item"><a href="156.html">156. Dos Vías Hay Delante. (150)</a></li>
       <li class="collection-item"><a href="157.html">157. Dulce Oracion. (151)</a></li>
@@ -768,6 +772,22 @@
         $("#himnos_lista li").filter(function() {
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
+      });
+       $(window).scroll(function(){
+        if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+          $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+        }else{ // si no
+          $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+        }
+      });
+
+      //creamos una función accediendo a la etiqueta i en su evento click
+      $("#js_up i").on('click', function (e) { 
+        e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+        $("body,html").animate({ // aplicamos la función animate a los tags body y html
+          scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+        },700); //el valor 700 indica que lo ara en 700 mili segundos
+        return false; //rompe el bucle
       });
     })(jQuery);
     </script>

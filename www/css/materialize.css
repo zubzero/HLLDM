@@ -2681,7 +2681,7 @@ a {
 .divider {
   height: 1px;
   overflow: hidden;
-  background-color: #e0e0e0;
+  background-color: #7d7d7d;
 }
 
 blockquote {
@@ -3431,7 +3431,8 @@ table span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 80%;
+  /*width: 80%;*/
+  width: 85%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -7554,9 +7555,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .sidenav li > a {
   color: rgba(0, 0, 0, 0.87);
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
-  height: 48px;
+  height: 39px;
   line-height: 48px;
   padding: 0 32px;
 }
@@ -7597,7 +7598,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 }
 
 .sidenav .divider {
-  margin: 8px 0 0 0;
+  margin: 35px 0 2px 0;
 }
 
 .sidenav .subheader {

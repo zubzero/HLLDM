@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" href="css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="css/index2.css">
-        <title>Himnario LLDM</title>
-    </head>
-  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=4, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <title>Himnario LLDM</title>
+  </head>
+    <body>
     <nav>
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Himnario</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
         <ul id="slide-out" class="sidenav">
-          <li><div class="user-view">
-            <div class="background">
-              <img src="img/templo.jpg">
-            </div>
-            <a href="#user"><img class="circle" src="img/icono.png"></a>
+          <li><div class="user-view"><a href="#user"><img class="circle" src="img/icono.png"></a>
           </div></li>
           <li><a class="waves-effect" href="index.html">Inicio</a></li>
           <li><a class="waves-effect" href="himnos.html">Himnos</a></li>
-          <li><a class="waves-effect" href="epistolas.html">Epístolas</a></li>
-          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
           <li><a class="waves-effect" href="adicionales.html">Adicionales</a></li>
-          <li><a class="waves-effect" href="temas_estudio.html">Temas de estudio</a></li>
+          <li><a class="waves-effect" href="epistolas_aaron.html">Epístolas de Aarón J.</a></li>
+          <li><a class="waves-effect" href="epistolas_samuel.html">Epístolas de Samuel J.</a></li>
+          <li><a class="waves-effect" href="epistolas_naason.html">Epístolas de Naasón J.</a></li>
+          <li><a class="waves-effect" href="nueva_era.html">Nueva Era</a></li>
+          <li><a class="waves-effect" href="temas_estudio.html">Estudios B&iacute;blicos</a></li>
+          <li><a class="waves-effect" href="favoritos.html">Favoritos</a></li>
           <li><div class="divider"></div></li>
           <li><a class="waves-effect" href="ajustes.html">Ajustes</a></li>
+          <li><a class="waves-effect" id="boton_apoyame" href="apoya.html">Apoya la app</a></li>
           <li><a class="waves-effect" href="" onclick="exitFromApp();">Salir</a></li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><img src="img/menu_icon.png" alt=""></a>
         </div>
     </nav>
-    <div class="container">
-      <h5>Temas de estudio</h5><br>
+    <div class="container lista">
+      <p>&nbsp;</p>
+      <div class="container"><h4>Estudios B&iacute;blicos</h4></div><br>
       <ul class="collection with-header">
         <li class="collection-item"><a href="te1.html">01. Origen de la ILLDM</a></li>
         <li class="collection-item"><a href="te2.html">02. Principio de la ILLDM</a></li>
-        <li class="collection-item"><a href="te3.html">03. La Palabra De Dios</a></li>
-        <li class="collection-item"><a href="te4.html">04. La Biblia</a></li>
-        <li class="collection-item"><a href="te5.html">05. El Canon Bíblico</a></li>
-        <li class="collection-item"><a href="te6.html">06. Fundamento de la Iglesia y Reino de Dios</a></li>
-        <li class="collection-item"><a href="te7.html">07. Características de la Iglesia de Cristo</a></li>
-        <li class="collection-item"><a href="te8.html">08. Elección Divina</a></li>
-        <li class="collection-item"><a href="te9.html">09. Gobierno Apostólico</a></li>
-        <li class="collection-item"><a href="te10.html">10. Doctrina Revelada</a></li>
-        <li class="collection-item"><a href="te11.html">11. Amor al Projimo</a></li>
-        <li class="collection-item"><a href="te12.html">12. El Evangelio</a></li>
-        <li class="collection-item"><a href="te13.html">13. Restauración de la Iglesia de Cristo</a></li>
-        <li class="collection-item"><a href="te14.html">14. Adoración Verdadera</a></li>
+        <li class="collection-item"><a href="te3.html">03. Restauración de la Iglesia</a></li>
+        <li class="collection-item"><a href="te4.html">04. La palabra de Dios</a></li>
+        <li class="collection-item"><a href="te5.html">05. La Biblia y la Palabra de Dios</a></li>
+        <li class="collection-item pro"><a href>06. La Biblia y su Origen</a></li>
+        <li class="collection-item pro"><a href>07. La Biblia en la Historia</a></li>
+        <li class="collection-item pro"><a href>08. Origen del Canon Bíblico</a></li>
+        <li class="collection-item pro"><a href>09. Desarrollo del Canon Bíblico</a></li>
+        <li class="collection-item pro"><a href>10. Fundamento de la Iglesia y del reino de Dios</a></li>
+        <li class="collection-item pro"><a href>11. Caracteristicas de la Iglesia de Cristo</a></li>
+        <li class="collection-item pro"><a href>12. Gobierno Apostólico</a></li>
+        <li class="collection-item pro"><a href>13. El Evangelio</a></li>
+        <li class="collection-item pro"><a href>14. La Adoración Verdadera</a></li>
+        <li class="collection-item pro"><a href>15. El Verbo y Cristo</a></li>
     </ul>
     </div>
     <script type="text/javascript" src="cordova.js"></script>

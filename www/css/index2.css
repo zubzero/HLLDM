@@ -42,7 +42,7 @@ footer{
   -webkit-font-smoothing: antialiased;
 }
 .sidenav .user-view {
-    padding: 25px 32px 25px;
+    padding: 25px 32px 10px;
 }
 .btn-floating{
 	position: fixed;
@@ -54,12 +54,12 @@ footer{
 }
 .just{text-align: justify;}
 .right{text-align: right;}
-.thimno{
+.thimno, .tith{
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 10px;
 }
-.cnt .azul, .cnt .nblu{color: #003973; font-weight: bold;}
+.just .azul, .cnt .azul, .cnt .nblu{color: #003973; font-weight: bold;}
 .nblu{font-size: 16px;}
 .isbn{
 	text-align: right;
@@ -83,23 +83,23 @@ nav .brand-logo{
   position: fixed;
   right: 20px;
   bottom: 10px;
-  z-index: 9999999;
+  z-index: 99;
   background-color: #fff;
-  width: 30px;
+  width: 35px;
   height: auto;
   border-radius: 30px;
   text-align: center;
   border: 1px solid #ccc;
 }
 .nav-letra{
-  font-size: 16px;
+  font-size: 19px;
   border-bottom: 1px solid #ccc;
 }
 #myInput {
   background-image: url('../img/search_icon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
-  width: 85%;
+  width: 72%;
   font-size: 16px;
   padding:  0 0 0 45px;
   border: 1px solid #ddd;
@@ -137,4 +137,96 @@ nav .brand-logo{
 .sidenav{
   background: url('../img/fondo_nav.jpg') no-repeat top right #fff;
   background-size: cover;
+}
+label{color: #0b2b67}
+/*nav .nav-wrapper{
+  position: fixed;
+  top:60px;
+  zoom: 0.8;
+}*/
+/*.container{
+    position: relative;
+    top: -67px;
+}*/
+.blue.darken-4{
+  opacity: .5;
+  background-color: #868686 !important;
+}
+.ajustes button{
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+}
+.lista{
+  width: 100%;
+}
+.lista #myInput{
+  position: fixed;
+  z-index: 99;
+  background-color: #ececec;
+  color: #333;
+  height: 46px;
+  margin: 10px 2%;
+}
+.lista h5{
+  position: relative;
+  top: 75px;
+  padding-left: 30px;
+  color: #08258f;
+}
+#himnos_lista{
+  position: relative;
+  top: 80px;
+}
+.sidenav{
+  width: 250px;
+}
+nav .sidenav-trigger{
+  margin: 0;
+}
+h4{
+  color: #08258f;
+  font-size: 1.8rem;
+  line-height: 20%;
+  margin: 0.7rem 0 0.7rem 0;
+}
+#slide-out > li:nth-child(10) {
+display: none;
+}
+/*botón up*/
+.boton-subir {
+    display: none;
+    border-radius: 3px;
+    position: fixed;
+    width: 45px;
+    top: 10px;
+    right: 15px;
+    z-index: 99999;
+    height: 45px;
+    opacity: 0.6;
+}
+/*evento hover*/
+.boton-subir:hover{
+  box-shadow:   0px 2px 10px 0px rgba(255, 255, 255, 0.75);
+}
+/*estilos para el tag i*/
+.boton-subir i{
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 10px 10px 7px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+#himnos_lista li a{font-size: 17px; color: #5f5f5f; font-weight: 500}
+.lista .collection-item, .epistolas .collection-item{position: relative;}
+.pro:after {
+ content: "PRO";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background: hsl(44, 100%, 85%);
+    font-size: 10px;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
 }
