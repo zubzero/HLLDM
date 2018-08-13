@@ -14,8 +14,6 @@
     });
     $(".tabs-content").css('height',maxHeight+'px');
     };
-   
-    
 })(jQuery);
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');

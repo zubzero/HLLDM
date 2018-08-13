@@ -51,15 +51,19 @@ footer{
 }
 .cnt{
 	text-align: center;
+  line-height: initial;
 }
 .just{text-align: justify;}
 .right{text-align: right;}
-.thimno, .tith{
+.thimno{
 	font-weight: bold;
 	font-size: 22px;
-	line-height: 10px;
+	line-height: 15px;
+  padding: 12px  0;
 }
-.just .azul, .cnt .azul, .cnt .nblu{color: #003973; font-weight: bold;}
+.cnt img{margin: 10px 0;}
+.cnt, p{margin: 5px 0 !important;}
+.just .azul, .cnt .azul, .cnt .nblu{color: #003973;}
 .nblu{font-size: 16px;}
 .isbn{
 	text-align: right;
@@ -85,14 +89,14 @@ nav .brand-logo{
   bottom: 10px;
   z-index: 99;
   background-color: #fff;
-  width: 35px;
+  width: 30px;
   height: auto;
   border-radius: 30px;
   text-align: center;
   border: 1px solid #ccc;
 }
 .nav-letra{
-  font-size: 19px;
+  font-size: 17px;
   border-bottom: 1px solid #ccc;
 }
 #myInput {
@@ -130,7 +134,8 @@ nav .brand-logo{
 }
 .himno{
     background: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 .sidenav .user-view .circle{margin:0 auto;}
