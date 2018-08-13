@@ -134,15 +134,9 @@ nav .brand-logo{
 }
 .himno{
     background: no-repeat;
-    /*background-size: contain;*/
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     background-position: bottom center;
-    height: 100%;
-    width: auto;
 }
 .sidenav .user-view .circle{margin:0 auto;}
 .sidenav{
