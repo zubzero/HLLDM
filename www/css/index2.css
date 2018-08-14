@@ -135,8 +135,7 @@ nav .brand-logo{
 .himno{
     background: no-repeat;
     background-size: cover;
-    /*background-attachment: fixed;*/
-    background-position: bottom center;
+    background-attachment: fixed;
 }
 .sidenav .user-view .circle{margin:0 auto;}
 .sidenav{
@@ -235,3 +234,4 @@ display: none;
     padding: 0 10px;
     border-radius: 0 0 10px 10px;
 }
+#fondos{display: none;}

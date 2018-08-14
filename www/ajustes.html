@@ -42,19 +42,19 @@
           <div id="letra">
             <p>
               <label>
-                <input name="tamano" id="chica" value="0.8rem" type="radio" checked />
+                <input name="tamano" id="chica" value="0.8rem" type="radio" />
                 <span style="font-size: 0.8rem;">Chica</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="tamano" id="normal" value="1rem" type="radio" checked />
+                <input name="tamano" id="normal" value="1rem" type="radio"  />
                 <span>Normal</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="tamano" id="mediana" value="1.2rem" type="radio" />
+                <input name="tamano" id="mediana" value="1.2rem" type="radio" checked/>
                 <span style="font-size: 1.2rem;">Mediana</span>
               </label>
             </p>
@@ -71,32 +71,32 @@
               </label>
             </p>
           </div>
+          <div id="fondos">
           <hr>
           Escoge si quieres que tenga im&aacute;genes.
-          <div id="fondos">
             <p>
               <label>
-                <input id="sin_fondo" name="fondo" value="nada" type="radio"  />
+                <input id="sin_fondo" name="fondo" value="nada" type="radio" checked />
                 <span>Sin im&aacute;genes</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="fondo" id="ldm" value="ldm" type="radio" checked />
+                <input name="fondo" id="ldm" value="ldm" type="radio"  />
                 <span>LDM</span>
                 <img class="responsive-img" src="img/fondos_form/ldm.jpg" alt="">
               </label>
             </p>
             <p>
               <label>
-                <input name="fondo" id="claro" value="claro" type="radio" checked />
+                <input name="fondo" id="claro" value="claro" type="radio"  />
                 <span>Lisos</span>
                 <img class="responsive-img" src="img/fondos_form/liso.jpg" alt="">
               </label>
             </p>
             <p>
               <label>
-                <input name="fondo" id="nat" value="nat" type="radio" checked />
+                <input name="fondo" id="nat" value="nat" type="radio"  />
                 <span>Naturaleza</span>
                 <img class="responsive-img" src="img/fondos_form/nat.jpg" alt="">
               </label>
@@ -110,7 +110,7 @@
             </p>
             <p>
               <label>
-                <input name="fondo" id="universo" value="universo" type="radio" checked />
+                <input name="fondo" id="universo" value="universo" type="radio"  />
                 <span>Universo</span>
                 <img class="responsive-img" src="img/fondos_form/uni.jpg" alt="">
               </label>
@@ -118,7 +118,7 @@
             
           </div>
           <hr>
-          <button onclick="store()" class=" waves-light btn light-blue darken-3" type="button">Guardar ajustes</button>
+          <button onclick="store()" class="waves-effect waves-light btn light-blue darken-3" type="button">Guardar ajustes</button>
         </form>
         <p style="color: green" id="mensaje">&nbsp;</p>
       </div>
