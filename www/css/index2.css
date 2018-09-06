@@ -62,7 +62,7 @@ footer{
   padding: 12px  0;
 }
 .cnt img{margin: 10px 0;}
-.cnt, p{margin: 5px 0 !important;}
+.cnt, p, .just, .right, .left{margin: 0 !important;}
 .just .azul, .cnt .azul, .cnt .nblu{color: #003973;}
 .nblu{font-size: 16px;}
 .isbn{
@@ -96,7 +96,7 @@ nav .brand-logo{
   border: 1px solid #ccc;
 }
 .nav-letra{
-  font-size: 17px;
+  font-size: 16px;
   border-bottom: 1px solid #ccc;
 }
 #myInput {
@@ -128,14 +128,19 @@ nav .brand-logo{
   color: black;
   display: block
 }
-
+.himno nav .sidenav-trigger{position: fixed;}
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
-.himno{
-    background: no-repeat;
+.fondo{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-attachment: fixed;
+    position: fixed;
 }
 .sidenav .user-view .circle{margin:0 auto;}
 .sidenav{
@@ -234,4 +239,9 @@ display: none;
     padding: 0 10px;
     border-radius: 0 0 10px 10px;
 }
-#fondos{display: none;}
+#mensaje{
+  position: fixed;
+    bottom: 70px;
+    right: 30px;
+    text-shadow: #fff 2px 2px 2px;
+}

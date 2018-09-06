@@ -42,32 +42,38 @@
           <div id="letra">
             <p>
               <label>
-                <input name="tamano" id="chica" value="0.8rem" type="radio" />
-                <span style="font-size: 0.8rem;">Chica</span>
+                <input name="tamano" id="chica" value="0.8" type="radio" />
+                <span style="zoom: 0.8;">Chica</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="tamano" id="normal" value="1rem" type="radio"  />
+                <input name="tamano" id="normal" value="1" type="radio"  />
                 <span>Normal</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="tamano" id="mediana" value="1.2rem" type="radio" checked/>
-                <span style="font-size: 1.2rem;">Mediana</span>
+                <input name="tamano" id="mediana" value="1.3" type="radio" checked/>
+                <span style="zoom: 1.3;">Mediana</span>
               </label>
             </p>
             <p>
               <label>
-                <input id="grande" name="tamano" value="1.5rem" type="radio"  />
-                <span style="font-size: 1.5rem;">Grande</span>
+                <input id="grande" name="tamano" value="1.6" type="radio"  />
+                <span style="zoom: 1.6;">Grande</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="tamano" id="extra" value="1.7rem" type="radio" />
-                <span style="font-size: 1.7rem;">Extra grande</span>
+                <input name="tamano" id="extra" value="1.8" type="radio" />
+                <span style="zoom: 1.8;">Enorme</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="tamano" id="gigante" value="2.3" type="radio" />
+                <span style="zoom: 2.3;">Gigante</span>
               </label>
             </p>
           </div>
@@ -115,12 +121,13 @@
                 <img class="responsive-img" src="img/fondos_form/uni.jpg" alt="">
               </label>
             </p>
-            
           </div>
           <hr>
           <button onclick="store()" class="waves-effect waves-light btn light-blue darken-3" type="button">Guardar ajustes</button>
         </form>
         <p style="color: green" id="mensaje">&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
       </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/jquery-2.1.1.min.js"></script>
@@ -164,12 +171,21 @@
         if (document.getElementById('extra').checked) {
           letra = document.getElementById('extra').value;
         }
+        if (document.getElementById('gigante').checked) {
+          letra = document.getElementById('gigante').value;
+        }
         // var inputEmail= document.getElementById("email");
         localStorage.setItem("fondos", fondos);
         localStorage.setItem("tamano", letra);
         // localStorage.setItem("email", inputEmail.value);
         document.getElementById('mensaje').innerHTML = 'Se guardaron tus ajustes';
       }
+      // if (localStorage.fondos){
+      //   fondoValor = localStorage.fondos;
+      //   (function($) {
+      //   $('input[name="fondo"]').val(fondoValor);
+      //   })(jQuery);
+      // }
     </script>
   </body>
 </html>
