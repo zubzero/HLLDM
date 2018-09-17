@@ -37,7 +37,7 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'color': '#fff'});
             $('.himno .azul, .himno .nblu').css({'color': '#62b0ff'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(0, 0, 0, 1)'});
-            $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left').css({'zoom': letra_tamano});
         })(jQuery);
     }
     if (fondo === 'ldm') {
@@ -45,7 +45,7 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
         (function($){
             $('.fondo').css({'background-image': 'url(img/fondos/' + images[Math.floor(Math.random() * images.length)] + ')'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(255, 255, 255, 1)'});
-            $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left').css({'zoom': letra_tamano});
         })(jQuery);
     };
     if (fondo === 'nat') {
@@ -53,7 +53,7 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
         (function($){
             $('.fondo').css({'background-image': 'url(img/fondos/' + images[Math.floor(Math.random() * images.length)] + ')'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(255, 255, 255, 1)'});
-            $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left').css({'zoom': letra_tamano});
         })(jQuery);
     };
     if (fondo === 'claro') {
@@ -61,7 +61,7 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
         (function($){
             $('.fondo').css({'background-image': 'url(img/fondos/' + images[Math.floor(Math.random() * images.length)] + ')'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(255, 255, 255, 1)'});
-            $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left').css({'zoom': letra_tamano});
         })(jQuery);
     };
     if (fondo === 'text') {
@@ -69,11 +69,11 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
         (function($){
             $('.fondo').css({'background-image': 'url(img/fondos/' + images[Math.floor(Math.random() * images.length)] + ')'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(255, 255, 255, 1)'});
-            $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left').css({'zoom': letra_tamano});
         })(jQuery);
     };
     if (fondo === 'nada') {
         (function($){
-            $('.himno .cnt, .himno i, .himno .nblu').css({'zoom': letra_tamano});
+            $('.himno .cnt, .himno .just, .himno .right, .himno .left, .himno .nblu').css({'zoom': letra_tamano});
         })(jQuery);
     };
