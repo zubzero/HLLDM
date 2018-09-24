@@ -49,7 +49,7 @@ document.getElementById('boton_apoyame').innerHTML = '¿Desea apoyar la app?';
         })(jQuery);
     };
     if (fondo === 'nat') {
-        var images = ['nat1.jpg', 'nat2.jpg', 'nat3.jpg', 'nat4.jpg', 'nat5.jpg', 'nat6.jpg', 'nat7.jpg', 'nat8.jpg'];
+        var images = ['nat1.jpg', 'nat2.jpg', 'nat3.jpg', 'nat4.jpg', 'nat5.jpg', 'nat6.jpg', 'nat7.jpg', 'nat8.jpeg'];
         (function($){
             $('.fondo').css({'background-image': 'url(img/fondos/' + images[Math.floor(Math.random() * images.length)] + ')'});
             $('.himno .cnt, .himno i, .himno .just, .himno .right, .himno .left').css({'text-shadow': '2px 2px 2px rgba(255, 255, 255, 1)'});

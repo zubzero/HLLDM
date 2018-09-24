@@ -52,9 +52,10 @@ footer{
 .cnt{
 	text-align: center;
   line-height: initial;
+  word-wrap: break-word;
 }
-.just{text-align: justify;}
-.right{text-align: right;}
+.just{text-align: justify;word-wrap: break-word;}
+.right{text-align: right;word-wrap: break-word;}
 .thimno{
 	font-weight: bold;
 	font-size: 22px;
@@ -137,10 +138,15 @@ nav .brand-logo{
     height: 100%;
     width: 100%;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 .sidenav .user-view .circle{margin:0 auto;}
 .sidenav{
@@ -245,3 +251,4 @@ display: none;
     right: 30px;
     text-shadow: #fff 2px 2px 2px;
 }
+.no_zoom{zoom: unset !important;}
